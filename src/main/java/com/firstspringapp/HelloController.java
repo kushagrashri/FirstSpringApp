@@ -21,5 +21,10 @@ public class HelloController {
         model.addAttribute("message", "Hello from BridgeLabz");
         return "hello";
     }
-    
+
+    //UC-3
+    @GetMapping("/hello3")
+    public String sayHello3(){
+        return "Hello from BridgeLabz";
+    }
 }
