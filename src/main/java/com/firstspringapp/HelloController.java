@@ -27,4 +27,10 @@ public class HelloController {
     public String sayHello3(){
         return "Hello from BridgeLabz";
     }
+
+    //UC-4
+    @GetMapping("/hello4")
+    public String sayHello4(){
+        return "Hello from BridgeLabz";
+    }
 }
