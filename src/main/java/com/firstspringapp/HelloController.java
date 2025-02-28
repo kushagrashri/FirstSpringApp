@@ -1,6 +1,7 @@
 package com.firstspringapp;
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -13,4 +14,12 @@ public class HelloController {
     public String sayHello1(){
         return "Hello from BridgeLabz";
     }
+
+    //UC-2
+    @GetMapping("/hello2")
+    public String saYHello2(Model model){
+        model.addAttribute("message", "Hello from BridgeLabz");
+        return "hello";
+    }
+    
 }
